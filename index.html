@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+   <head>
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+      <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/css/bootstrap.min.css" integrity="sha384-eOJMYsd53ii+scO/bJGFsiCZc+5NDVN2yr8+0RDqr0Ql0h+rP48ckxlpbzKgwra6" crossorigin="anonymous">
+
+      <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+      <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/js/bootstrap.bundle.min.js" integrity="sha384-JEW9xMcG8R+pH31jmWH6WWP0WintQrMb4s7ZOdauHnUtxwoG2vI5DkLtS3qm9Ekf" crossorigin="anonymous"></script>
+      <script src="script.js"></script>
+
+      <title> Guess the button! </title>
+   </head>
+
+   <body background="Assets/wp8091811-goku-cute-wallpapers.jpg">
+      <div class="container">
+         <div class="card" style="width: 550px;	height: 70px; background-color:rgba(5, 1, 1, 0.30); position: static;">
+            <h1> Guess the button! </h1>
+         </div>
+         <br>
+         <div class="card-body" style="width: 550px;	height: 230px;	background-color: rgba(145, 99, 2, 0.534);	position: static;">   
+            <div class="mb-4">
+               <label class="label"> <h3> How many buttons do you want to add? </h3></label>
+               <input type="number" class="form-control" id="numberOfButtons">
+            </div>
+            <h5 id = "status" > Status:<h5>
+            <br>
+            <button type="submit" class="btn btn-primary" style="opacity:0.7" onclick="incrementButtons();">Start</button>
+            <button type="submit" class="btn btn-danger" style="opacity:0.7" onclick="restartGame();">Restart</button>
+         </div>
+      </div>
+      <br><br>
+      <div class="row row-cols-6" style="opacity:0.7" id = "buttons"></div>
+      </div>
+   </body>
+</html>
